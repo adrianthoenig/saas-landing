@@ -13,3 +13,82 @@
     box-sizing: border-box;
 }
 
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+:root {
+    /* App colors */
+    --primary-gray: #2B2B2B;
+    --dark-gray: #333333;
+    --light-gray: #C4C4C4;
+    --green: #009379;
+    --blue: #3366FF;
+    --red: #FF6250;
+    --yellow: #FFDF90;
+    --purple: #BFAFF2;
+}
+
+body {
+    background-color: var(--primary-gray);
+    font-family: 'Poppins', sans-serif, Arial, Helvetica;
+    color: #fff;
+}
+
+/* -------------------- 
+    NAVIGATION
+--------------------*/
+
+.navigation {
+    padding: 32px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__title {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.nav.btn {
+    color: #fff;
+    font-size: 1.125;
+    font-weight: 300;
+    letter-spacing: 1.1;
+    max-width: 175px;
+    min-height: 50px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.nav.btn.signup {
+    margin-right: 30px;
+    padding-bottom: 2px;
+    transition: border 0.6s ease-in;
+}
+
+.nav.btn.signup:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.nav.btn.login {
+    padding: 8px 60px;
+    background-color: var(--purple);
+    color: var(--dark-gray);
+    border-radius: 16px;
+    transition: background 0.5s ease-in-out;
+}
+
+.nav.btn.login:hover {
+    background-color: #A68FE0;
+}
